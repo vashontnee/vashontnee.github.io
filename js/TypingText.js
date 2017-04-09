@@ -22,7 +22,11 @@ Functions defined:
     Run all TypingText-enabled objects on the page.
 */
 
+window.onload = function () { alert("Hi I'm Vashon, welcome to my online resume!") }
+
 TypingText = function(element, interval, cursor, finishedCallback) {
+
+
   if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
     this.running = true;	// Never run.
     return;
